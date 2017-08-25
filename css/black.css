@@ -50,7 +50,7 @@ header ul {
 }
 header ul li:nth-child(1){
 	/*font-size: 38px;*/
-	font-size: 4em;
+	font-size: 4rem;
 }
 header ul li:nth-child(2){
 	background: url('../img/bg_text.png') no-repeat 0 4px;
@@ -59,11 +59,11 @@ header ul li:nth-child(2){
 	color: #3e3d52;
 	margin: 1% auto;
 	width: 65%;
-	font-size: 2.3em;
+	font-size: 2.3rem;
 }
 header ul li:nth-child(3) {
 	/*font-size: 21px;*/
-	font-size: 2.3em;
+	font-size: 2.3rem;
 }
 /*第一部分*/
 .sec1, .sec3, .sec5{
@@ -86,14 +86,14 @@ header ul li:nth-child(3) {
 }
 .sec1_box ul li:nth-child(1), .sec1_box ul li:nth-child(2), .sec2 ul li:nth-child(1), .sec2 ul li:nth-child(2), .sec3_box ul li:nth-child(1), .sec3_box ul li:nth-child(2) {
 	/*font-size: 34px*/
-	font-size: 2.6em;
+	font-size: 2.6rem;
 }
 .sec1_box ul li:nth-child(2), .sec3_box ul li:nth-child(2) {
 	margin: 1% 0;
 }
 .sec1_box ul li:nth-child(3), .sec3_box ul li:nth-child(3) {
 	/*font-size: 18px;*/
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	color: #858585;
 }
 /*第二部分*/
@@ -117,7 +117,7 @@ header ul li:nth-child(3) {
 }
 .sec2 ul li:nth-child(3) {
 	/*font-size: 18px;*/
-	font-size: 1.3em;
+	font-size: 1.3rem;
 }
 /*第三部分*/
 .sec3_box {
@@ -146,11 +146,11 @@ header ul li:nth-child(3) {
 }
 .sec4 ul li:nth-child(1){
 	/*font-size: 34px;*/
-	font-size: 2.6em;
+	font-size: 2.6rem;
 	margin-bottom:3%;
 }
 .sec4 ul li:nth-child(2){
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: 155%;
 }
 /*第五部分*/
@@ -167,13 +167,13 @@ header ul li:nth-child(3) {
 	width: 43%;
 }
 .sec5_box dl dt{
-	font-size: 2.6em;
+	font-size: 2.6rem;
 	/*font-size: 34px;*/
 	margin-bottom:3%;
 }
 .sec5_box dl dd{
 	/*font-size: 16px;*/
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	color: #858585;
 }
 /*去除百度角标*/
@@ -198,7 +198,7 @@ footer {
 }
 
 /*字体适应小屏幕*/
-@media (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
 	body {
 		font-size: 12px
 	}
@@ -220,7 +220,9 @@ footer {
 }
 @media (max-width: 900px) {
 	body {
-		font-size: 12px;
-		/*transform:scale(0.5);*/
+		font-size: 9px;
+	}
+	.scale_text{
+		transform: scale(0.8); !important
 	}
 }
