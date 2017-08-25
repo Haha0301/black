@@ -12,18 +12,18 @@ nav .box {
 }
 nav .box div{
 	width: 12%;
-	padding: 1% 0;
+	padding: 1.5% 0;
 }
 nav .box div img {
 	width: 100%;
-	background-size: 100%;
 }
 nav .box ul {
-	width: 25%;
+	width: 32%;
 }
 nav .box ul li {
 	float: left;
 	padding: 8%;
+	font-size: 1.4em;
 	cursor: pointer;
 }
 nav .box ul li.active {
@@ -204,28 +204,49 @@ footer {
 		font-size: 11px
 	}
 }
-/*@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 	body {
 		font-size: 10px
 	}
+	.sec4 ul {
+		width: 30%;
+	}
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	body {
 		font-size: 9px
+	}
+	.sec4 ul {
+		width: 40%;
 	}
 }
 @media screen and (max-width: 900px) {
 	body {
 		font-size: 8px;
 	}
+	.sec4  {
+		overflow: hidden;
+	}
+	.sec4 ul {
+		transform: scale(0.8);
+		margin-top: -1%;
+		padding: 0;
+	}
 }
 @media screen and (max-width: 700px) {
 	body {
 		font-size: 7px;
+	}
+	header ul {
+		width: 59%;
+	}
+	.sec4 ul {
+		transform: scale(0.5);
+		margin-top: -2%;
 	}
 }
 @media screen and (max-width: 600px) {
 	body {
 		font-size: 6px;
 	}
-}*/
+}
