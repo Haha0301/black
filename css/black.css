@@ -54,10 +54,10 @@ header ul li:nth-child(1){
 }
 header ul li:nth-child(2){
 	background: url('../img/bg_text.png') no-repeat 0 4px;
-	background-size: 100%;
+	background-size: 100% 100%;
 	/*font-size: 20px;*/
 	color: #3e3d52;
-	margin: 5px auto;
+	margin: 1% auto;
 	width: 65%;
 	font-size: 2.3em;
 }
@@ -89,7 +89,7 @@ header ul li:nth-child(3) {
 	font-size: 2.6em;
 }
 .sec1_box ul li:nth-child(2), .sec3_box ul li:nth-child(2) {
-	margin: 5px 0;
+	margin: 1% 0;
 }
 .sec1_box ul li:nth-child(3), .sec3_box ul li:nth-child(3) {
 	/*font-size: 18px;*/
@@ -113,7 +113,7 @@ header ul li:nth-child(3) {
 	font-size: 34px
 }*/
 .sec2 ul li:nth-child(2) {
-	margin: 5px 0;
+	margin: 1% 0;
 }
 .sec2 ul li:nth-child(3) {
 	/*font-size: 18px;*/
