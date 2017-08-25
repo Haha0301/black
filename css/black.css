@@ -50,7 +50,7 @@ header ul {
 }
 header ul li:nth-child(1){
 	/*font-size: 38px;*/
-	font-size: 4rem;
+	font-size: 4em;
 }
 header ul li:nth-child(2){
 	background: url('../img/bg_text.png') no-repeat 0 4px;
@@ -59,11 +59,11 @@ header ul li:nth-child(2){
 	color: #3e3d52;
 	margin: 1% auto;
 	width: 65%;
-	font-size: 2.3rem;
+	font-size: 2.3em;
 }
 header ul li:nth-child(3) {
 	/*font-size: 21px;*/
-	font-size: 2.3rem;
+	font-size: 2.3em;
 }
 /*第一部分*/
 .sec1, .sec3, .sec5{
@@ -86,14 +86,14 @@ header ul li:nth-child(3) {
 }
 .sec1_box ul li:nth-child(1), .sec1_box ul li:nth-child(2), .sec2 ul li:nth-child(1), .sec2 ul li:nth-child(2), .sec3_box ul li:nth-child(1), .sec3_box ul li:nth-child(2) {
 	/*font-size: 34px*/
-	font-size: 2.6rem;
+	font-size: 2.6em;
 }
 .sec1_box ul li:nth-child(2), .sec3_box ul li:nth-child(2) {
 	margin: 1% 0;
 }
 .sec1_box ul li:nth-child(3), .sec3_box ul li:nth-child(3) {
 	/*font-size: 18px;*/
-	font-size: 1.3rem;
+	font-size: 1.3em;
 	color: #858585;
 }
 /*第二部分*/
@@ -117,7 +117,7 @@ header ul li:nth-child(3) {
 }
 .sec2 ul li:nth-child(3) {
 	/*font-size: 18px;*/
-	font-size: 1.3rem;
+	font-size: 1.3em;
 }
 /*第三部分*/
 .sec3_box {
@@ -146,11 +146,11 @@ header ul li:nth-child(3) {
 }
 .sec4 ul li:nth-child(1){
 	/*font-size: 34px;*/
-	font-size: 2.6rem;
+	font-size: 2.6em;
 	margin-bottom:3%;
 }
 .sec4 ul li:nth-child(2){
-	font-size: 1rem;
+	font-size: 1em;
 	line-height: 155%;
 }
 /*第五部分*/
@@ -167,13 +167,13 @@ header ul li:nth-child(3) {
 	width: 43%;
 }
 .sec5_box dl dt{
-	font-size: 2.6rem;
+	font-size: 2.6em;
 	/*font-size: 34px;*/
 	margin-bottom:3%;
 }
 .sec5_box dl dd{
 	/*font-size: 16px;*/
-	font-size: 1.2rem;
+	font-size: 1.2em;
 	color: #858585;
 }
 /*去除百度角标*/
@@ -203,26 +203,33 @@ footer {
 		font-size: 12px
 	}
 }
-@media (max-width: 1300px) {
+@media screen and (max-width: 1300px) {
 	body {
 		font-size: 11px
 	}
 }
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
 	body {
 		font-size: 10px
 	}
 }
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	body {
 		font-size: 9px
 	}
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
 	body {
-		font-size: 9px;
+		font-size: 8px;
 	}
-	.scale_text{
-		transform: scale(0.8); !important
+}
+@media screen and (max-width: 700px) {
+	body {
+		font-size: 7px;
+	}
+}
+@media screen and (max-width: 600px) {
+	body {
+		font-size: 6px;
 	}
 }
