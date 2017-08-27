@@ -139,7 +139,7 @@ section .sec1_box {
 .sec4_box ul {
 	width: 45.3%;
 	color: #fff;
-	padding: 5% 0;
+	padding: 8% 0 5%;
 }
 .sec4_box ul li:nth-child(1){
 	font-size: 2.6em;
@@ -264,8 +264,17 @@ footer {
 		font-size: 9px
 	}
 	header ul {
-		width: 71%;
+		width: 80%;
 		padding: 20% 0 20%;
+	}
+	header ul li:nth-child(1){
+		font-size: 3.5em;
+	}
+	header ul li:nth-child(2){
+		font-size: 2.2em;
+	}
+	header ul li:nth-child(3) {
+		font-size: 2.2em;
 	}
 	section .box {
 		width: 80%;
@@ -301,9 +310,13 @@ footer {
 	.sec4_box ul li:nth-child(1){
 		text-align: center;
 	}
+	nav .nav_box {
+		width: 75%;
+	}
 	nav .show_nav{
 		display: none;
 	}
+
 	.hide_nav .hide_btn{
 		display: block;
 	}
