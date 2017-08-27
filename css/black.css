@@ -5,28 +5,33 @@
 nav {
 	width: 100%;
 	border-bottom: 2px solid #dc946d;
+	background:#fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }
-nav .box {
+nav .nav_box {
 	width: 55%;
 	margin: 0 auto;
 }
-nav .box div{
+nav .nav_box div{
 	width: 12%;
 	padding: 1.5% 0;
 }
-nav .box div img {
+nav .nav_box div img {
 	width: 100%;
 }
-nav .box ul {
+nav .nav_box ul {
 	width: 32%;
 }
-nav .box ul li {
+nav .nav_box ul li {
 	float: left;
 	padding: 8%;
 	font-size: 1.4em;
 	cursor: pointer;
 }
-nav .box ul li.active {
+nav .nav_box ul li.active {
 	background: #f5f5f5;
 	color: #696969;
 }
@@ -34,7 +39,7 @@ nav .box ul li.active {
 header {
 	width: 100%;
 	background: url(../img/bg_head.png) no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 	/*height: 410px;*/
 }
 header ul {
@@ -61,34 +66,36 @@ header ul li:nth-child(3) {
 	/*font-size: 21px;*/
 	font-size: 2.3em;
 }
-/*第一部分*/
-.sec1, .sec3, .sec5{
+/*公共样式*/
+section {
 	width: 100%;
 }
-.sec1_box, .sec5_box{
-	width: 52%;
+section .box {
+	width: 60%;
 	margin: 0 auto;
-	padding: 5% 0 5%;
 }
-.sec1_box div {
-	width: 40%;
-} 
-.sec1_box div img, .sec3_box div img {
+section .box img {
 	width: 100%;
-	background-size: 100%;
-} 
-.sec1_box ul, .sec3_box ul{
-	text-align: center;
 }
-.sec1_box ul li:nth-child(1), .sec1_box ul li:nth-child(2), .sec2 ul li:nth-child(1), .sec2 ul li:nth-child(2), .sec3_box ul li:nth-child(1), .sec3_box ul li:nth-child(2) {
-	/*font-size: 34px*/
+/*第一、三部分*/
+section .sec1_box {
+	padding: 5% 0 5%;
+} 
+.sec1_box div, .sec3_box div {
+	width: 40%;
+}
+.sec1_box ul, .sec3_box ul {
+	text-align: center;
+	width: 40%;
+}
+.sec1_box ul li:nth-child(1), .sec1_box ul li:nth-child(2), .sec3_box ul li:nth-child(1), .sec3_box ul li:nth-child(2)  {
 	font-size: 2.6em;
 }
 .sec1_box ul li:nth-child(2), .sec3_box ul li:nth-child(2) {
 	margin: 1% 0;
 }
 .sec1_box ul li:nth-child(3), .sec3_box ul li:nth-child(3) {
-	/*font-size: 18px;*/
+	font-size: 18px;
 	font-size: 1.3em;
 	color: #858585;
 }
@@ -96,31 +103,27 @@ header ul li:nth-child(3) {
 .sec2 {
 	width: 100%;
 	background: url(../img/banner2.png) no-repeat;
-	background-size: 100%;
+	background-size: 100%  100%;
+}
+.sec2_box div {
+	display: none
 }
 .sec2 ul {
-	margin-left: 20%;
 	color: #fff;
-	padding: 8% 0 8%;
-	width: 30%;
+	padding: 12% 0 14%;
+	width: 45%;
 	text-align: center;
 }
-/*.sec2 ul li:nth-child(1), .sec2 ul li:nth-child(2){
-	font-size: 34px
-}*/
+.sec2 ul li:nth-child(1), .sec2 ul li:nth-child(2){
+	font-size: 2.6em;
+}
 .sec2 ul li:nth-child(2) {
 	margin: 1% 0;
 }
 .sec2 ul li:nth-child(3) {
-	/*font-size: 18px;*/
 	font-size: 1.3em;
 }
 /*第三部分*/
-.sec3_box {
-	width: 62%;
-	padding: 0;
-	margin: 0 auto;
-}
 .sec3_box div {
 	width: 43%;
 }
@@ -131,49 +134,53 @@ header ul li:nth-child(3) {
 /*第四部分*/
 .sec4 {
 	width: 100%;
-	background: url(../img/banner4.png) no-repeat;
-	background-size: 100%;
+	background:#18103e;
 }
-.sec4 ul {
-	width: 28.3%;
-	margin-left: 15%;
+.sec4_box ul {
+	width: 45.3%;
 	color: #fff;
-	padding: 3%;
+	padding: 5% 0;
 }
-.sec4 ul li:nth-child(1){
-	/*font-size: 34px;*/
+.sec4_box ul li:nth-child(1){
 	font-size: 2.6em;
 	margin-bottom:3%;
 }
-.sec4 ul li:nth-child(2){
+.sec4_box ul li:nth-child(2){
 	font-size: 1em;
 	line-height: 155%;
 }
+.sec4_box div {
+	width: 44%;
+	padding-top: 8%;
+}
 /*第五部分*/
-.sec5_box{
-	width: 60%;
+.sec5_box {
+	padding: 5% 0;
 }
 .sec5_box #map {
 	width: 42%;
 	height: 200px;
-	margin-right: 10%;
+	margin-right: 8%;
 }
 .sec5_box dl {
 	margin-top: 3%;
-	width: 43%;
+	width: 50%;
 }
 .sec5_box dl dt{
 	font-size: 2.6em;
-	/*font-size: 34px;*/
 	margin-bottom:3%;
 }
 .sec5_box dl dd{
-	/*font-size: 16px;*/
 	font-size: 1.2em;
 	color: #858585;
 }
-/*去除百度角标*/
-.anchorBL { display:none}
+/*去除百度地图样式*/
+.anchorBL { 
+	display:none
+}
+.BMap_noprint{
+	display: none
+}
 /*底部*/
 footer {
 	width: 100%;
@@ -192,8 +199,49 @@ footer {
 .foot_logo img, .foot_num img {
 	width: 100%;
 }
+/*隐藏导航*/
+.hide_nav {
+	width: 100%;
+	transition: 1s all ease;
+}
+.hide_nav .hide_btn {
+	display: none;
+	cursor: pointer;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	right: 23%;
+	top: 16%;
+	text-align: center;
+}
+.hide_nav .hide_btn li {
+	width: 80%;
+	height: 2px;
+    background: #3e3d52;
+   	margin-top: 21%;
+    margin-left: 10%;
+}
+.hide_nav .hide_con {
+	display: none;
+	width: 100%;
+	position: absolute;
+	top : 0;
+	left: 0;
+	background: #f5f5f5;
+	color: #696969;
+	text-align: center;
+	font-size: 2em;
+}
+.hide_nav .hide_con li {
+	padding: 2% 0;
+	cursor: pointer;
+}
+.hide_nav .hide_con.active {
+	display: block;
+	top:106%;
+}
 
-/*字体适应小屏幕*/
+/*适应屏幕*/
 @media screen and (max-width: 1400px) {
 	body {
 		font-size: 12px
@@ -208,45 +256,55 @@ footer {
 	body {
 		font-size: 10px
 	}
-	.sec4 ul {
-		width: 30%;
-	}
 }
-@media screen and (max-width: 1100px) {
+
+/*手机*/
+@media screen and (max-width: 950px) {
 	body {
 		font-size: 9px
 	}
-	.sec4 ul {
-		width: 40%;
-	}
-}
-@media screen and (max-width: 900px) {
-	body {
-		font-size: 8px;
-	}
-	.sec4  {
-		overflow: hidden;
-	}
-	.sec4 ul {
-		transform: scale(0.8);
-		margin-top: -1%;
-		padding: 0;
-	}
-}
-@media screen and (max-width: 700px) {
-	body {
-		font-size: 7px;
-	}
 	header ul {
-		width: 59%;
+		width: 71%;
+		padding: 20% 0 20%;
 	}
-	.sec4 ul {
-		transform: scale(0.5);
-		margin-top: -2%;
+	section .box {
+		width: 80%;
 	}
-}
-@media screen and (max-width: 600px) {
-	body {
-		font-size: 6px;
+	section .box ul{
+		width: 100%;
+	}
+	section .box dl{
+		width: 100%;
+		text-align: center;
+	}
+	section .box div{
+		width: 100%;
+		text-align: center;
+	}
+	section .box div img {
+		width: 50%;
+	}
+	section .box #map{
+		width: 100%;
+		margin: 0 auto;
+	}
+	section .sec2_box {
+		background: #18103e;
+	}
+	section .sec2_box div {
+		display: block;
+		padding-top: 3%;
+	}
+	.sec2 ul {
+		padding: 4% 0 8%;
+	}
+	.sec4_box ul li:nth-child(1){
+		text-align: center;
+	}
+	nav .show_nav{
+		display: none;
+	}
+	.hide_nav .hide_btn{
+		display: block;
 	}
 }

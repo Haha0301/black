@@ -28,13 +28,8 @@ $(function () {
 			scrollTop: disY
 		},1000);
 	})
-    　//判断是否手机端访问
-    var userAgentInfo = navigator.userAgent.toLowerCase();
-    var Agents = ["android", "iphone","symbianos", "windows phone","ipad", "ipod"];
-    var ly=document.referrer; //返回导航到当前网页的超链接所在网页的URL
-    for (var v = 0; v < Agents.length; v++) {
-        if (userAgentInfo.indexOf(Agents[v]) >= 0&&(ly==""||ly==null)) {
-            this.location.href='http://m.***.com'; //wap端地址
-        }
-    }
+    //导航按钮
+    $('.hide_nav .hide_btn').click(function () {
+        $('.hide_nav .hide_con').toggleClass('active')
+    })
 })

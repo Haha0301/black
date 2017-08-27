@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<!-- <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> -->
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>小黑官网</title>
 	<link rel="stylesheet" type="text/css" href="./css/base.css">
 	<link rel="stylesheet" type="text/css" href="./css/black.css">
@@ -13,13 +13,25 @@
 <body>
 	<div id="wrap">
 		<nav>
-			<div class="box clear-fix">
+			<div class="nav_box clear-fix">
 				<div class="fl"><img src="./img/logo.png"></div>
-				<ul class="fr clear-fix">
+				<ul class="show_nav fr clear-fix">
 					<li class="about">关于我们</li>
 					<li class="our">联系我们</li>
 				</ul>
+				
 			</div>
+			<div class="hide_nav">
+					<ul class="hide_btn">
+				        <li></li>
+				        <li></li>
+				        <li></li>
+			    	</ul>
+					<ul class="hide_con">
+						<li class="about">关于我们</li>
+						<li class="our">联系我们</li>
+					</ul>
+				</div>
 		</nav>
 		<header>
 			<ul>
@@ -29,8 +41,8 @@
 			</ul>
 		</header>
 		<section class="sec1">
-			<div class="sec1_box clear-fix">
-				<div><img src="./img/earth.png" class="fl"></div>
+			<div class="box sec1_box clear-fix">
+				<div  class="fl"><img src="./img/earth.png"></div>
 				<ul class="fr">
 					<li>技术驱动型解决方案</li>
 					<li>助力行业升级</li>
@@ -39,15 +51,18 @@
 			</div>
 		</section>
 		<section class="sec2">
-			<ul>
-				<li class="scale_text">高效可信的智能化产品</li>
-				<li class="scale_text">构建流畅体验</li>
-				<li class="scale_text">满足不同场景的奢侈品鉴定需求</li>
-			</ul>
+			<div class="box sec2_box clear-fix">
+				<div class="fr"><img src="./img/line.png"></div>
+				<ul class="fl">
+					<li class="scale_text">高效可信的智能化产品</li>
+					<li class="scale_text">构建流畅体验</li>
+					<li class="scale_text">满足不同场景的奢侈品鉴定需求</li>
+				</ul>
+			</div>
 		</section>
 		<section class="sec3">
-			<div class="sec3_box clear-fix">
-				<div><img src="./img/lock.png" class="fl"></div>
+			<div class="box sec3_box clear-fix">
+				<div class="fl"><img src="./img/lock.png"></div>
 				<ul class="fr">
 					<li>技术中立第三方</li>
 					<li>数据开放无限可能</li>
@@ -56,13 +71,16 @@
 			</div>
 		</section>
 		<section class="sec4">
-			<ul>
-				<li class="scale_text">关于我们</li>
-				<li class="scale_text">北京小黑智能科技有限公司成立于2017年，致力于引入人工智能与机器学习、图片识别技术，解决奢侈品市场用户迫切的真假鉴定需求。研发团队负责人是专攻智能数据领域多年的人工智能科学家、博士生导师，团队成员均是来自清华大学研究人工智能方向的博士与研究生，加上深耕奢侈品流通行业十年以上的运营团队，开发了奢侈品人工智能鉴定系统，让用户可以摆脱人工鉴定、设备鉴定的限制，随时重启奢侈品价值，促进流通。此外，人工智能鉴定系统还提供个性化模块定制，满足不同场景下的奢侈品鉴定要求，权威第三方鉴定机构保障用户权益。小黑智能科技的愿景是为用户提供极致体验和高效可信的服务。</li>
-			</ul>
+			<div class="box sec4_box clear-fix">
+				<div class="fr"><img src="./img/phone.png"></div>
+				<ul class="fl">
+					<li class="scale_text">关于我们</li>
+					<li class="scale_text">北京小黑智能科技有限公司成立于2017年，致力于引入人工智能与机器学习、图片识别技术，解决奢侈品市场用户迫切的真假鉴定需求。研发团队负责人是专攻智能数据领域多年的人工智能科学家、博士生导师，团队成员均是来自清华大学研究人工智能方向的博士与研究生，加上深耕奢侈品流通行业十年以上的运营团队，开发了奢侈品人工智能鉴定系统，让用户可以摆脱人工鉴定、设备鉴定的限制，随时重启奢侈品价值，促进流通。此外，人工智能鉴定系统还提供个性化模块定制，满足不同场景下的奢侈品鉴定要求，权威第三方鉴定机构保障用户权益。小黑智能科技的愿景是为用户提供极致体验和高效可信的服务。</li>
+				</ul>
+			</div>
 		</section>
 		<section class="sec5">
-			<div class="sec5_box clear-fix">
+			<div class="box sec5_box clear-fix">
 				<div id="map" class="fl"></div>
 				<dl class="fl">
 					<dt>联系我们</dt>
