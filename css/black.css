@@ -295,7 +295,7 @@ footer {
 		padding: 15% 0;
 	}
 	section .box {
-		width: 80%;
+		width: 90%;
 	}
 	section .box ul{
 		width: 100%;
@@ -339,6 +339,7 @@ footer {
 	.sec4_box ul {
 		height: 190px;
 	}
+
 	.sec4_box ul li:nth-child(1){
 		text-align: center;
 	}
@@ -351,5 +352,23 @@ footer {
 
 	.hide_nav .hide_btn{
 		display: block;
+	}
+}
+@media screen and (max-width: 650px) {
+	header ul {
+		width: 60%;
+	}
+	header ul li:nth-child(2){
+		width: 102%;
+	}
+	.sec4_box ul {
+		margin-top: 0;
+		transform: scale(0.8);
+		padding: 2% 0 3%;
+	}
+	.sec4_box ul li:nth-child(2) {
+		line-height: 1.4;
+		width: 120%;
+    	margin-left: -10%;
 	}
 }
